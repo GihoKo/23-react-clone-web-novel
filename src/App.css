@@ -158,3 +158,104 @@ body {
 .navbar-bottom button:nth-child(n+2) {
   margin-left: 8px;
 }
+
+/*main 보이게 하기용*/
+
+.boidSpace {
+  width: 100%;
+  height: 200px;
+}
+
+/*main*/
+.main {
+  width: 956px;
+  height: 3920px;
+
+  margin: auto;
+}
+
+.main-advertisement1 {
+  width: 934px;
+  height: 44px;
+  padding: 0 11px;
+  margin-top: 180px;
+  margin: auto;
+  margin-bottom: 12px;
+
+  background-color: rgb(240, 240, 240);
+
+  border: 1px solid rgb(240, 240, 240);
+  border-radius: 10px;
+}
+
+.main-content1-container {
+  width: 934px;
+
+  padding: 0 11px;
+  margin: auto;
+
+  border-radius: 20px;
+
+  overflow: hidden;
+}
+
+.main-content1 {
+  width: 2320px;
+  height: 460px;
+  transform: translateX(-50%);
+
+  display: flex;
+
+}
+
+.main-content1 div {
+  width: 464px;
+  height: 460px;
+
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.main-content1 div img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.main-content2-container {
+  width: 938px;
+  height: 304px;
+
+  margin: auto;
+  margin-top: 5px;
+
+  overflow: hidden;
+
+  display: flex;
+
+
+}
+
+.main-content2-container div {
+  width: 16.66%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.main-content2-container div img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.main-advertisement2 {
+  width: 934px;
+  height: 44px;
+
+  margin: auto;
+  margin-top: 5px;
+  border-radius: 10px;
+
+  background-color: rgb(160, 44, 214);
+
+}
