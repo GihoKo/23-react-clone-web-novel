@@ -1,38 +1,160 @@
-.App {
+* {
+  box-sizing: border-box;
+  margin: 0;
+  z-index: 1;
+}
+
+body {
+  position: relative;
+  width: 100%;
+  height: 2000px
+}
+
+.verticalAlignment {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+
+/*navbar*/
+.navbar {
+  position: fixed;
+
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 1200px;
+  min-width: 1200px;
+  height: 96px;
+
+  z-index: 2;
+  background-color: white;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/*navbar-top*/
+.navbar-top {
+  height: 96px;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.Logo {
+  flex-basis: 96px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar-top-2 {
+  display: flex;
+  flex-basis: 554px;
+}
+
+.navbar-top-2 div {
+  flex-basis: auto;
+}
+
+.navbar-top-2 div:nth-child(1) {
+  margin-left: 32px;
+}
+
+.navbar-top-2 div:nth-child(2) {
+  margin-left: 32px;
+}
+
+.navbar-top-2 div:nth-child(3) {
+  margin-left: 32px;
+}
+
+.navbar-top-2 div:nth-child(4) {
+  margin-left: 32px;
+}
+
+.navbar-top-2 div:nth-child(5) {
+  margin-left: 32px;
+}
+
+.navbar-top-searchContainer {
+  flex-basis: 200px;
+  height: 34px;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 0 12px;
+
+  margin-right: 24px;
+  position: relative;
+  top: 50px;
+  transform: translateY(-50%);
+}
+
+.navbar-top-searchContainer form {
+  display: flex;
+}
+
+.navbar-top-searchContainer-input {
+  border: none;
+  font-size: 14px;
+}
+
+.navbar-top-4 {
+  flex-basis: 208px;
+  display: flex;
+}
+
+.navbar-top-4 div:nth-child(2) {
+  margin-left: 24px;
+}
+
+.navbar-top-4 div:nth-child(3) {
+  margin-left: 24px;
+}
+
+.navbar-top-4-toggleBtn {
+  height: 30px;
+  margin-left: 24px;
+  display: flex;
+}
+
+.navbar-top-4-toggleBtn button {
+  border: none;
+  background-color: white;
+}
+
+.navbar-bottom {
+  width: 956px;
+  height: 60px;
+
+  background-color: white;
+
+  position: fixed;
+  top: 96px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  z-index: 2;
+
+  overflow: hidden;
+}
+
+.navbar-bottom-list-buttonCss {
+  background-color: white;
+  padding: 0 14px;
+  border: 1px solid rgb(141, 141, 141);
+  border-radius: 20px;
+
+  white-space: nowrap;
+  height: 36px;
+
+  font-size: 12px;
+
+}
+
+.navbar-bottom button:nth-child(n+2) {
+  margin-left: 8px;
 }
