@@ -53,7 +53,7 @@ function App() {
                 }}>
                   <FontAwesomeIcon icon={faUser} style={{ fontSize: "24px" }} />
                 </button>
-                <button  onClick={()=>{
+                <button onClick={()=>{
                   
                 }}>
                   <FontAwesomeIcon icon={faAngleDown} />
