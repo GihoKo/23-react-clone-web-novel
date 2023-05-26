@@ -1,7 +1,9 @@
-import { useState, Link, useEffect } from "react";
+import { useState, useEffect } from "react";
+import { Routes, Route, Link } from 'react-router-dom';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons'
 import '.././App.css';
+import { Novel10001 } from './novel/화산천마.js'
 
 
 function Webnovel(props) {
@@ -14,7 +16,6 @@ function Webnovel(props) {
         slide.style.transform = `translateX(${currentSlide}%)`;
         무한캐러셀(); //특정 슬라이드에 도착시 해당 캐러셀로 애니메이션 없이 이동해 눈속임으로 무한 캐러셀 실행
     }, [currentSlide])
-
     function 무한캐러셀() {
         setTimeout(() => { // 슬라이드가 다 움직인 이후 실행되게 만듬
             if (currentSlide == -5 && slideSwitch == 1) { // 해당 슬라이드에 next 버튼 누른 상태에서 시작
@@ -32,7 +33,7 @@ function Webnovel(props) {
             }
         }, 1000);
     };
-
+    
     return (
 
         <div className="main">
@@ -80,9 +81,12 @@ function Webnovel(props) {
                         <FontAwesomeIcon icon={faChevronRight} />
                     </button>
                 </div>
-
                 <div className="main-content2-container">
-                    <div><img src={"https://dn-img-page.kakao.com/download/resource?kid=bF7Qzn/hyzT0jnEqg/5HdFNwUCkAYFdlySESoxU0&filename=th3"} /></div>
+                    <div>
+                        <Link to="/content/10001">
+                            <img src={"https://dn-img-page.kakao.com/download/resource?kid=bNZohZ/hzHNEev7lR/UL3hlpIAbPL8vTiHpxF7I1&filename=th3"} />
+                        </Link>
+                    </div>
                     <div><img src={"https://dn-img-page.kakao.com/download/resource?kid=vIfzm/hAdNV3EBUI/mB5fSz9QKmhQlgkKXKBidk&filename=th3"} /></div>
                     <div><img src={"https://dn-img-page.kakao.com/download/resource?kid=bcZq24/hzCs6VHJGe/b9S2ziTbwEPcVvSQ0rrZr0&filename=th3"} /></div>
                     <div><img src={"https://dn-img-page.kakao.com/download/resource?kid=dXoLM/hAdNRmEavx/rbmcN6ihhxslzelwI1dnc1&filename=th3"} /></div>
@@ -90,7 +94,6 @@ function Webnovel(props) {
                     <div><img src={"https://dn-img-page.kakao.com/download/resource?kid=e4thK/hzVqH33HpM/NnuAvxrtdR7UDBpWzr5P71&filename=th3"} /></div>
 
                 </div>
-
                 <div className="main-advertisement2">
                     충격! 유재석 재입대? 5/16 플유 4화 대공개
                 </div>
