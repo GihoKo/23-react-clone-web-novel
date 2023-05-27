@@ -1,0 +1,215 @@
+.버튼초기화 {
+    border: 0;
+    outline: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: content-box;
+}
+
+.border-line {
+    border: 1px solid black;
+}
+
+.container {
+    width: 956px;
+
+    margin: auto;
+
+    display: flex;
+
+
+}
+
+/**왼쪽*/
+.container-left {
+    width: 320px;
+    margin-right: 4px;
+}
+
+/**작품정보*/
+.작품정보 {
+    height: 685px;
+    margin-bottom: 4px;
+    background-color: #F7F7F7;
+}
+
+/**썸네일*/
+
+.작품정보-썸네일-콘테이너 {
+    position: relative;
+}
+
+.작품정보-썸네일-배경 {
+    width: 320px;
+    height: 320px;
+    overflow: hidden;
+
+}
+
+.작품정보-썸네일-배경 img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    -webkit-filter: blur(12px);
+    -moz-filter: blur(12px);
+    -o-filter: blur(12px);
+    -ms-filter: blur(12px);
+    filter: blur(12px);
+
+    transform: scale(1.05);
+}
+
+.작품정보-썸네일-썸네일 {
+    width: 160px;
+    height: 228px;
+
+    position: absolute;
+
+    bottom: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+
+
+    z-index: 55;
+}
+
+.작품정보-썸네일-썸네일 img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+/**콘텐츠*/
+.작품정보-콘텐츠 {
+    text-align: center;
+}
+
+.작품정보-콘텐츠-타이틀 {
+    font-size: 21px;
+
+    font-weight: 700;
+
+    padding-top: 24px;
+}
+
+.작품정보-콘텐츠-조회수별점장르 {
+    margin-top: 16px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-size: 12px;
+}
+
+.작품정보-콘텐츠-연재요일 {
+    padding-top: 4px;
+    padding-bottom: 2px;
+    font-size: 12px;
+    color: rgb(117, 117, 117);
+}
+
+.작품정보-콘텐츠-작가 {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-size: 12px;
+    color: rgb(117, 117, 117);
+}
+
+/**작품정보-이느낌으로더*/
+.작품정보-이느낌으로더 {
+    padding-top: 16px;
+    padding-bottom: 20px;
+
+    display: flex;
+    justify-content: center;
+
+}
+
+.작품정보-이느낌으로더-버튼 {
+    border: 0;
+    outline: 0;
+    padding: 0;
+    border-radius: 16px;
+
+    background-color: rgb(48, 48, 48);
+    color: white;
+    font-size: 11px;
+    font-weight: 700;
+
+    width: 106px;
+    height: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.작품정보-좋아요 {
+    margin-top: 16px;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.작품정보-좋아요-버튼 {
+    border: 0;
+    outline: 0;
+    padding: 0;
+
+    background-color: inherit;
+    
+}
+
+.작품정보-무료로첫편보기 {
+    text-align: center;
+}
+
+.작품정보-무료로첫편보기-버튼 {
+    border: 0;
+    outline: 0;
+    padding: 0;
+
+    width: 256px;
+    height:56px;
+
+    border-radius: 4px;
+    background-color: rgb(255, 174, 0);
+    font-size: 12px;
+    font-weight: 700;
+
+}
+
+/**삼다무*/
+.삼다무 {
+    height: 4711px;
+    background-color: #F7F7F7;
+}
+
+/**오른쪽*/
+.container-right {
+    width: 632px;
+}
+
+
+.작품소개 {
+    height: 72px;
+    background-color: #F7F7F7;
+}
+
+.작품소개콘텐츠 {
+    height: 756px;
+    background-color: #F7F7F7;
+}
+
+.무협소설TOP {
+    height: 288px;
+    background-color: #F7F7F7;
+}
+
+.댓글 {
+    height: 4250px;
+    background-color: #F7F7F7;
+}

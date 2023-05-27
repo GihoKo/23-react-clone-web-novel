@@ -5,6 +5,8 @@ import { faGift, faBox, faTicket, faUser, faMagnifyingGlass, faAngleDown, faChev
 import { useState } from 'react';
 import { Webnovel } from './routes/webnovel.js';
 
+import { Novel10001 } from './routes/novel/화산천마.js'
+
 function App() {
 
   let [drag, setDrag] = useState(false); //드래그 스위치
@@ -19,7 +21,6 @@ function App() {
     })
     e.target.classList.add('navbar-bottom-list-buttonCss-click');
   }
-
   function mouseDown(e) {
     if (drag == false) {
       setDrag(true); //드래그 스위치 on
@@ -146,7 +147,7 @@ function App() {
         </div>
       </div>
 
-      <div className="boidSpace"></div>
+      <div className="voidSpace"></div>
 
       <Routes>
         <Route path={`${navbar주소[0]}`} element={<><div>추천페이지입니다</div></>} />
@@ -156,6 +157,8 @@ function App() {
         } />
         <Route path={`${navbar주소[3]}`} element={<><div>책페이지입니다</div></>} />
         <Route path={`${navbar주소[4]}`} element={<><div>바로가기페이지입니다</div></>} />
+
+        <Route path={`/content/10001`} element={ < Novel10001 /> } />
 
       </Routes>
 
