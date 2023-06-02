@@ -1,6 +1,6 @@
+import { Link } from 'react-router-dom';
 import './화산천마.css';
 import { useSelector } from 'react-redux';
-
 
 function Novel10001() {
     //리덕스로 데이터 불러와서 데이터 바인딩하고 반복문으로 모든 작품 탬플릿 적용
@@ -68,6 +68,9 @@ function Novel10001() {
                 <div className='container-right'>
                     <div className='작품소개'>홈,작품소개,소식</div>
                     <div className='작품소개콘텐츠'>홈,작품소개,소식 콘텐츠</div>
+                    <Link to={`/content/10001/viewer/100010001`}>
+                        <span>1화로 이동</span>
+                    </Link>
                     <div className='무협소설TOP'>무협소설 TOP</div>
                     <div className='댓글'>댓글</div>
                 </div>

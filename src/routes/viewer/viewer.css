@@ -1,0 +1,96 @@
+* {
+  box-sizing: content-box;
+  margin: 0;
+}
+
+html {
+  height: 100vh;
+}
+
+body {
+  height: 100vh;
+}
+
+.flex {
+  display: flex;
+}
+
+._24px {
+  width: 24px;
+  height: 24px;
+}
+
+.flex-세로중간정렬 {
+  align-self: center;
+}
+
+.viewer-navbar {
+  box-sizing: border-box;
+  width: 100%;
+  height: 68px;
+  border-bottom: 1px solid black;
+  padding: 0 24px;
+  position: fixed;
+}
+
+.viewer-navbar__1 {
+  flex-grow: 1;
+}
+
+.viewer-navbar__1-flex {
+}
+
+.viewer-navbar__1__home {
+  margin-right: 16px;
+}
+
+.viewer-navbar__2 {
+  margin-right: 40px;
+}
+
+.viewer-navbar__2__home {
+  margin-right: 16px;
+}
+
+.viewer-navbar__2__정주행 {
+  padding-right: 24px;
+}
+
+.viewer-navbar__3 {
+}
+
+/**뷰어 내용*/
+.viewer__content {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100vh;
+  padding: 68px 0;
+
+  justify-content: center;
+}
+
+.viewer__content__novel {
+  width: 75%;
+  height: 100%;
+}
+
+.viewer__content__novel-left {
+  width: 45%;
+  height: 100%;
+}
+.viewer__content__novel-rigth {
+  width: 45%;
+  height: 100%;
+}
+
+.커버-container {
+  position: relative;
+  left: 20%;
+  top: 5%;
+  width: 80%;
+}
+
+.커버 {
+  width: 100%;
+  height: 100%;
+}

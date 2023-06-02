@@ -1,11 +1,13 @@
 import './App.css';
 import { useNavigate, Link, Routes, Route } from 'react-router-dom';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGift, faBox, faTicket, faUser, faMagnifyingGlass, faAngleDown, faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons'
+import { faGift, faBox, faTicket, faUser, faMagnifyingGlass} from '@fortawesome/free-solid-svg-icons'
 import { useState } from 'react';
 import { Webnovel } from './routes/webnovel.js';
 
-import { Novel10001 } from './routes/novel/화산천마.js'
+import { Novel10001 } from './routes/novel/화산천마.js';
+
+import { Viewer } from './routes/viewer/viewer.js';
 
 function App() {
 
@@ -153,12 +155,14 @@ function App() {
         <Route path={`${navbar주소[0]}`} element={<><div>추천페이지입니다</div></>} />
         <Route path={`${navbar주소[1]}`} element={<><div>웹툰페이지입니다</div></>} />
         <Route path={`${navbar주소[2]}`} element={
-          <Webnovel/ >
+          <Webnovel />
         } />
         <Route path={`${navbar주소[3]}`} element={<><div>책페이지입니다</div></>} />
         <Route path={`${navbar주소[4]}`} element={<><div>바로가기페이지입니다</div></>} />
 
-        <Route path={`/content/10001`} element={ < Novel10001 /> } />
+        <Route path={`/content/10001`} element={< Novel10001 />} />
+
+        <Route path={`/content/10001/viewer/100010001`} element={ < Viewer />} />
 
       </Routes>
 
